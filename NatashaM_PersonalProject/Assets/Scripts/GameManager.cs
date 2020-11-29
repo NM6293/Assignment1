@@ -32,8 +32,10 @@ public class GameManager : MonoBehaviour
         isGameActive = false;
         WONText.gameObject.SetActive(true);
     }
-    // Update is called once per frame
-    void Update()
+    
+    
+        // Update is called once per frame
+        void Update()
     {
         //restart
         if (Input.GetKeyDown("r"))

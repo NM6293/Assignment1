@@ -60,7 +60,14 @@ public class PlayerController : MonoBehaviour
             Debug.Log("You lost :(");
             playerAudio.PlayOneShot(lose, 1.0f);
         }
-
+        //level 3 load
+        if (collision.gameObject.CompareTag("L3")) {
+            SceneManager.LoadScene("Level3");
+                }
+        if (collision.gameObject.CompareTag("L4"))
+        {
+            gameManager.GameWon();
+        }
 
     }
 }
